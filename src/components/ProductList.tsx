@@ -58,7 +58,7 @@ const ProductList = () => {
 
   const filterHandler = () => {
     if (selectedId) window.location.href = `/products?id=${selectedId}`;
-    else window.location.href = `/products`;
+    else window.location.href = `/products/?page=1`;
   };
 
   const changeNumberHandler = (value: number | null) => {
